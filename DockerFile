@@ -1,0 +1,8 @@
+# Usa una imagen base de un servidor web ligero, como Nginx
+FROM nginx:alpine
+
+# Copia los archivos de tu proyecto al directorio de HTML de Nginx
+COPY . /usr/share/nginx/html
+
+# Exponer el puerto que tu aplicación usa
+EXPOSE 80
